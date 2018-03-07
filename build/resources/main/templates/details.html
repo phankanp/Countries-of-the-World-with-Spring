@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" th:href="@{/app.css}" />
+
+    <title th:text="${detail.name}">Country Name</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1><a href="/">Countries of the World</a></h1>
+    </div>
+</header>
+<div class="container">
+    <div class="country-details">
+        <h2 th:text="${detail.name}">Country Name</h2>
+        <div class="meta">
+            <div class="stat">
+                <h4>Population</h4>
+                <span th:text="${detail.population}">Population</span>
+            </div>
+            <div class="stat">
+                <h4>Capital</h4>
+                <span th:text="${detail.capitalCity}">Capital</span>
+            </div>
+            <div class="stat">
+                <h4>Official Languages</h4>
+                <ul>
+                    <li th:each="language : ${detail.languages}" th:text="${language}">Languages</li>
+                </ul>
+            </div>
+        </div>
+        <div class="flag">
+            <img th:src="@{'/images/' + ${detail.name} + '.png'}" th:alt="${detail.name}"/>
+        </div>
+    </div>
+</div>
+</body>
+</html>
