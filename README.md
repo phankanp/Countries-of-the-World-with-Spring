@@ -1,3 +1,5 @@
+Java web application with the Spring Framework. Used Spring Boot, application configuration, URI mapping in controllers, and dependency injection by autowiring Spring beans.
+
 # Steps
 
 - Gather current, accurate information on the five countries being included in the application. The information must include the following:
