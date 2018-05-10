@@ -1,4 +1,4 @@
-Java web application with the Spring Framework. Used Spring Boot, application configuration, URI mapping in controllers, and dependency injection by autowiring Spring beans.
+Java web application built with the Spring Framework. Used Spring Boot, application configuration, URI mapping in controllers, and dependency injection by autowiring Spring beans.
 
 # Steps
 
